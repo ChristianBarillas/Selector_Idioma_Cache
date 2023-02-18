@@ -1,28 +1,28 @@
 "use strict";
 const modal = document.querySelector(".modal_over");
 
-const definiridioma = ()=>{
-document.querySelector(".en").addEventListener("click", ()=> {
-localStorage.setItem("idioma", "en");
+const definiridioma = () => {
+    document.querySelector(".en").addEventListener("click", () => {
+        localStorage.setItem("idioma", "en");
 
-cerrarmodal ()
+        cerrarmodal()
 
-})
+    })
 
-document.querySelector(".es").addEventListener("click", ()=>{
-localStorage.setItem("idioma", "es");
+    document.querySelector(".es").addEventListener("click", () => {
+        localStorage.setItem("idioma", "es");
 
-cerrarmodal()
+        cerrarmodal()
 
-})
+    })
 
 }
 
-const cerrarmodal = ()=> {
+const cerrarmodal = () => {
 
- 
+
     modal.style.animation = "desaparecer 1s forwards";
-    setTimeout(()=> modal.style.display= "none", 1000);
+    setTimeout(() => modal.style.display = "none", 1000);
 
 
 }
